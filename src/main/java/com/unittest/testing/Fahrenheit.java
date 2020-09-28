@@ -6,17 +6,18 @@ public class Fahrenheit {
 	public double getCelcius() {
 		return celcius;
 	}
+
 	public void input(double celcius) {
 		this.celcius = celcius;
 	}
+	
 	public boolean isBound(double celcius) {
 		boolean isResult;
-		if(celcius <= 1000 && celcius >= -1000) {
+		if(celcius >= -1000 && celcius <= 1000) {
 			isResult = true;
-		}else {
-			isResult =false;
+		}else{
+			isResult = false;
 		}
 		return isResult;
 	}
-	
 }
